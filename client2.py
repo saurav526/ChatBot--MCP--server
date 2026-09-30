@@ -38,58 +38,6 @@ SERVERS = {
     }
 
   },
-
-  "coworkUserFilesPath": "C:\\Users\\Asus\\Claude",
-
-  "preferences": {
-    "coworkBrowserToolsEnabled": false,
-    "coworkPreferredBrowser": "built_in",
-    "launchPreviewPersistedWorkspaces": [],
-    "launchPreviewSessionScopedSessions": [],
-    "coworkLegacyRootGrantsPruned": true,
-    "coworkScheduledTasksEnabled": false,
-    "coworkHipaaRestricted": false,
-    "orgWorkAcrossAppsDisabled": true,
-    "ccdScheduledTasksEnabled": false,
-    "earlyWindowShowLatched": true,
-    "storeReadCacheLatched": true,
-    "bypassPermissionsGateByAccount": {
-      "8a3f0732-6d39-46d0-8598-fc5885957fb3": false
-    },
-    "coworkWebSearchEnabled": true,
-    "coworkModelAutoFallbackByAccount": {
-      "8a3f0732-6d39-46d0-8598-fc5885957fb3": true
-    },
-    "remoteToolsDeviceName": "laptop-horrteis",
-    "epitaxyPrefs": {
-      "desktop-frame.paneStore.v1": {
-        "state": {
-          "extraPanesByMode": {},
-          "colWeightsByMode": {},
-          "rowSplit": 0.5,
-          "draftNonce": 0,
-          "lastPrimaryCodeSession": null
-        },
-        "version": 4
-      },
-      "dframe-group-scopes": {},
-      "dframe-local-slice": {
-        "pinnedOrder": [],
-        "homeProjectsPinnedOrder": []
-      },
-      "starred-local-code-sessions": [],
-      "starred-local-routines": [],
-      "starred-session-groups": [],
-      "starred-cowork-spaces": [],
-      "ccd-sessions-filter": {
-        "state": {
-          "selectedProjects": []
-        },
-        "version": 0
-      }
-    },
-    "windowsAppJobLatched": true
-  }
 }
 
 
