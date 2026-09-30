@@ -7,31 +7,83 @@ import json
 
 load_dotenv()
 
-SERVERS = { 
-    "math": {
-        "transport": "stdio",
-        "command": "/Library/Frameworks/Python.framework/Versions/3.11/bin/uv",
-        "args": [
-            "run",
-            "fastmcp",
-            "run",
-            "/Users/nitish/Desktop/mcp-math-server/main.py"
-       ]
+SERVERS = {
+  "mcpServers": {
+    "ExpenseTracker": {
+      "command": "C:\\Users\\Asus\\OneDrive\\Desktop\\coding file\\expense-tracker-MCP-server\\.venv\\Scripts\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\Asus\\OneDrive\\Desktop\\coding file\\expense-tracker-MCP-server",
+        "python",
+        "main.py"
+      ]
     },
-    "expense": {
-        "transport": "streamable_http",  # if this fails, try "sse"
-        "url": "https://splendid-gold-dingo.fastmcp.app/mcp"
-    },
-    "manim-server": {
-        "transport": "stdio",
-        "command": "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3",
-        "args": [
-        "/Users/nitish/desktop/manim-mcp-server/src/manim_server.py"
-      ],
-        "env": {
-        "MANIM_EXECUTABLE": "/Library/Frameworks/Python.framework/Versions/3.11/bin/manim"
-      }
+
+    "maths-server": {
+      "command": "C:\\Users\\Asus\\Downloads\\maths-mcp-server\\.venv\\Scripts\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\Asus\\Downloads\\maths-mcp-server",
+        "python",
+        "main.py"
+      ]
     }
+
+  },
+
+  "coworkUserFilesPath": "C:\\Users\\Asus\\Claude",
+
+  "preferences": {
+    "coworkBrowserToolsEnabled": false,
+    "coworkPreferredBrowser": "built_in",
+    "launchPreviewPersistedWorkspaces": [],
+    "launchPreviewSessionScopedSessions": [],
+    "coworkLegacyRootGrantsPruned": true,
+    "coworkScheduledTasksEnabled": false,
+    "coworkHipaaRestricted": false,
+    "orgWorkAcrossAppsDisabled": true,
+    "ccdScheduledTasksEnabled": false,
+    "earlyWindowShowLatched": true,
+    "storeReadCacheLatched": true,
+    "bypassPermissionsGateByAccount": {
+      "8a3f0732-6d39-46d0-8598-fc5885957fb3": false
+    },
+    "coworkWebSearchEnabled": true,
+    "coworkModelAutoFallbackByAccount": {
+      "8a3f0732-6d39-46d0-8598-fc5885957fb3": true
+    },
+    "remoteToolsDeviceName": "laptop-horrteis",
+    "epitaxyPrefs": {
+      "desktop-frame.paneStore.v1": {
+        "state": {
+          "extraPanesByMode": {},
+          "colWeightsByMode": {},
+          "rowSplit": 0.5,
+          "draftNonce": 0,
+          "lastPrimaryCodeSession": null
+        },
+        "version": 4
+      },
+      "dframe-group-scopes": {},
+      "dframe-local-slice": {
+        "pinnedOrder": [],
+        "homeProjectsPinnedOrder": []
+      },
+      "starred-local-code-sessions": [],
+      "starred-local-routines": [],
+      "starred-session-groups": [],
+      "starred-cowork-spaces": [],
+      "ccd-sessions-filter": {
+        "state": {
+          "selectedProjects": []
+        },
+        "version": 0
+      }
+    },
+    "windowsAppJobLatched": true
+  }
 }
 
 async def main():
